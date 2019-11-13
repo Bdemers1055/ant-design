@@ -4,7 +4,7 @@ module.exports = {
         {
           name: 'General',
           include: [
-            '../node_modules/antd/es/button/button.js',
+            'components/button/button.tsx',
           ]
         }
       ]
