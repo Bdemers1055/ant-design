@@ -1,0 +1,31 @@
+{
+  "categorizedComponents": [
+    {
+      "components": [
+        {
+          "documentation": {
+            "examples": []
+          },
+          "info": {
+            "dirPath": "./components/button",
+            "implementation": {
+              "framework": "reactjs",
+              "lang": "typescript",
+              "path": "./components/button/button.tsx"
+            },
+            "presets": []
+          },
+          "name": "Button",
+          "presets": [],
+          "properties": []
+        }
+      ],
+      "name": "General"
+    }
+  ],
+  "name": "Antd Design System",
+  "vcs": {
+    "branchName": "master",
+    "commitHash": "95638fb60f86f2c8ef434d3db2db9ae7fc83c639"
+  }
+}
