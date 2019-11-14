@@ -82,6 +82,9 @@ interface ButtonState {
   hasTwoCNChar: boolean;
 }
 
+/**
+ * @uxpincomponent
+ */
 class Button extends React.Component<ButtonProps, ButtonState> {
   static Group: typeof Group;
   static __ANT_BUTTON = true;
