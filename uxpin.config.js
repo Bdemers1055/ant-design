@@ -4,7 +4,7 @@ module.exports = {
         {
           name: 'General',
           include: [
-            './components/button/button.tsx',
+            './components/button/button.jsx',
           ]
         }
       ]
