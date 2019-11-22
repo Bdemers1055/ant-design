@@ -7,114 +7,17 @@
             "examples": []
           },
           "info": {
-            "dirPath": "./components/button",
+            "dirPath": "./components/button/presets",
             "implementation": {
               "framework": "reactjs",
               "lang": "javascript",
-              "path": "./components/button/button.jsx"
+              "path": "./components/button/presets/default.jsx"
             },
             "presets": []
           },
-          "name": "Button",
+          "name": "UXPinWrapper",
           "presets": [],
-          "properties": [
-            {
-              "description": "",
-              "isRequired": false,
-              "name": "type",
-              "type": {
-                "name": "string",
-                "structure": {}
-              }
-            },
-            {
-              "description": "",
-              "isRequired": false,
-              "name": "shape"
-            },
-            {
-              "description": "",
-              "isRequired": false,
-              "name": "size"
-            },
-            {
-              "defaultValue": {
-                "value": "button"
-              },
-              "description": "",
-              "isRequired": false,
-              "name": "htmlType"
-            },
-            {
-              "description": "",
-              "isRequired": false,
-              "name": "onClick",
-              "type": {
-                "name": "func",
-                "structure": {}
-              }
-            },
-            {
-              "defaultValue": {
-                "value": false
-              },
-              "description": "",
-              "isRequired": false,
-              "name": "loading",
-              "type": {
-                "name": "union",
-                "structure": {
-                  "elements": [
-                    {
-                      "name": "boolean",
-                      "structure": {}
-                    },
-                    {
-                      "name": "object",
-                      "structure": {}
-                    }
-                  ]
-                }
-              }
-            },
-            {
-              "description": "",
-              "isRequired": false,
-              "name": "className",
-              "type": {
-                "name": "string",
-                "structure": {}
-              }
-            },
-            {
-              "description": "",
-              "isRequired": false,
-              "name": "icon",
-              "type": {
-                "name": "string",
-                "structure": {}
-              }
-            },
-            {
-              "defaultValue": {
-                "value": false
-              },
-              "description": "",
-              "isRequired": false,
-              "name": "block",
-              "type": {
-                "name": "boolean",
-                "structure": {}
-              }
-            },
-            {
-              "defaultValue": {
-                "value": false
-              },
-              "isRequired": false,
-              "name": "ghost"
-            }
-          ],
+          "properties": [],
           "wrappers": []
         }
       ],
@@ -124,6 +27,6 @@
   "name": "Antd Design System",
   "vcs": {
     "branchName": "master",
-    "commitHash": "9f2b008b3da5faebc76e77d195e927b8b30ae852"
+    "commitHash": "403805114c02934d56b859fd02dac1e031608ed9"
   }
 }
