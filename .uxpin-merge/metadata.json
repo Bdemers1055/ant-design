@@ -10,14 +10,112 @@
             "dirPath": "./components/button",
             "implementation": {
               "framework": "reactjs",
-              "lang": "typescript",
-              "path": "./components/button/button.tsx"
+              "lang": "javascript",
+              "path": "./components/button/button.jsx"
             },
             "presets": []
           },
           "name": "Button",
           "presets": [],
-          "properties": []
+          "properties": [
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "type",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "shape"
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "size"
+            },
+            {
+              "defaultValue": {
+                "value": "button"
+              },
+              "description": "",
+              "isRequired": false,
+              "name": "htmlType"
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "onClick",
+              "type": {
+                "name": "func",
+                "structure": {}
+              }
+            },
+            {
+              "defaultValue": {
+                "value": false
+              },
+              "description": "",
+              "isRequired": false,
+              "name": "loading",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "boolean",
+                      "structure": {}
+                    },
+                    {
+                      "name": "object",
+                      "structure": {}
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "className",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "icon",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "defaultValue": {
+                "value": false
+              },
+              "description": "",
+              "isRequired": false,
+              "name": "block",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "defaultValue": {
+                "value": false
+              },
+              "isRequired": false,
+              "name": "ghost"
+            }
+          ],
+          "wrappers": []
         }
       ],
       "name": "General"
@@ -26,6 +124,6 @@
   "name": "Antd Design System",
   "vcs": {
     "branchName": "master",
-    "commitHash": "95638fb60f86f2c8ef434d3db2db9ae7fc83c639"
+    "commitHash": "9f2b008b3da5faebc76e77d195e927b8b30ae852"
   }
 }

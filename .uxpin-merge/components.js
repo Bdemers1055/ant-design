@@ -1,8 +1,10 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import Button from '../components/button/button';
+import Default from '../components/button/presets/default';
+import Wrapper from '../components/button/button.jsx';
 export {
-  Button,
+  Default,
+  Wrapper,
   React,
   ReactDOM,
 };
