@@ -1,14 +1,12 @@
 import * as React from 'react';
 import classnames from 'classnames';
-import {
-  CheckCircleFilled,
-  CloseCircleFilled,
-  ExclamationCircleFilled,
-  WarningFilled,
-} from '@ant-design/icons';
+import CheckCircleFilled from '@ant-design/icons/CheckCircleFilled';
+import CloseCircleFilled from '@ant-design/icons/CloseCircleFilled';
+import ExclamationCircleFilled from '@ant-design/icons/ExclamationCircleFilled';
+import WarningFilled from '@ant-design/icons/WarningFilled';
 
 import { ConfigConsumerProps, ConfigConsumer } from '../config-provider';
-import warning from '../_util/warning';
+import devWarning from '../_util/devWarning';
 
 import noFound from './noFound';
 import serverError from './serverError';
@@ -27,7 +25,7 @@ export const ExceptionMap = {
   '403': unauthorized,
 };
 
-export type ExceptionStatusType = keyof typeof ExceptionMap;
+export type ExceptionStatusType = 403 | 404 | 500 | '403' | '404' | '500';
 export type ResultStatusType = ExceptionStatusType | keyof typeof IconMap;
 
 export interface ResultProps {
@@ -54,13 +52,13 @@ const ExceptionStatus = Object.keys(ExceptionMap);
 const renderIcon = (prefixCls: string, { status, icon }: ResultProps) => {
   const className = classnames(`${prefixCls}-icon`);
 
-  warning(
+  devWarning(
     !(typeof icon === 'string' && icon.length > 2),
     'Result',
     `\`icon\` is using ReactNode instead of string naming in v4. Please check \`${icon}\` at https://ant.design/components/icon`,
   );
 
-  if (ExceptionStatus.includes(status as ResultStatusType)) {
+  if (ExceptionStatus.includes(`${status}`)) {
     const SVGComponent = ExceptionMap[status as ExceptionStatusType];
     return (
       <div className={`${className} ${prefixCls}-image`}>
@@ -79,7 +77,7 @@ const renderIcon = (prefixCls: string, { status, icon }: ResultProps) => {
 const renderExtra = (prefixCls: string, { extra }: ResultProps) =>
   extra && <div className={`${prefixCls}-extra`}>{extra}</div>;
 
-export interface ResultType extends React.SFC<ResultProps> {
+export interface ResultType extends React.FC<ResultProps> {
   PRESENTED_IMAGE_404: React.ReactNode;
   PRESENTED_IMAGE_403: React.ReactNode;
   PRESENTED_IMAGE_500: React.ReactNode;

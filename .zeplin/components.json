@@ -1,4 +1,9 @@
 {
+    "plugins": [
+        {
+            "name": "@zeplin/cli-connect-react-plugin"
+        }
+    ],
     "projects": [],
     "styleguides": [
         "5ebd96997783c832eadd928f"
