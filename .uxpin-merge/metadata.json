@@ -1,0 +1,32 @@
+{
+  "categorizedComponents": [
+    {
+      "components": [
+        {
+          "documentation": {
+            "examples": []
+          },
+          "info": {
+            "dirPath": "./components/button/presets",
+            "implementation": {
+              "framework": "reactjs",
+              "lang": "javascript",
+              "path": "./components/button/presets/default.jsx"
+            },
+            "presets": []
+          },
+          "name": "UXPinWrapper",
+          "presets": [],
+          "properties": [],
+          "wrappers": []
+        }
+      ],
+      "name": "General"
+    }
+  ],
+  "name": "Antd Design System",
+  "vcs": {
+    "branchName": "master",
+    "commitHash": "c60e8968a7acdcfb6d27688035b8ea3c27db18b4"
+  }
+}

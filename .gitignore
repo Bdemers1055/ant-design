@@ -34,10 +34,17 @@ config/base.yaml
 /coverage
 yarn.lock
 package-lock.json
+<<<<<<< HEAD
 components/**/*.js
 components/**/*.jsx
 !components/**/__tests__/**/*.js
 !components/**/__tests__/**/*.js.snap
+=======
+# components/**/*.js
+# components/**/*.jsx
+# !components/**/__tests__/*.js
+# !components/**/__tests__/*.js.snap
+>>>>>>> 92cd7f646061770f1aafc0aab4cac2e0d87dfb20
 /.history
 *.tmp
 

@@ -121,6 +121,7 @@ interface CompoundedComponent
   __ANT_BUTTON: boolean;
 }
 
+<<<<<<< HEAD
 const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (props, ref) => {
   const size = React.useContext(SizeContext);
   const [loading, setLoading] = React.useState(props.loading);
@@ -132,6 +133,32 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (pr
   const isNeedInserted = () => {
     const { icon, children, type } = props;
     return React.Children.count(children) === 1 && !icon && type !== 'link';
+=======
+/**
+ * @uxpincomponent
+ */
+class Button extends React.Component<ButtonProps, ButtonState> {
+  static Group: typeof Group;
+  static __ANT_BUTTON = true;
+
+  static defaultProps = {
+    loading: false,
+    ghost: false,
+    block: false,
+    htmlType: 'button',
+  };
+
+  static propTypes = {
+    type: PropTypes.string,
+    shape: PropTypes.oneOf(ButtonShapes),
+    size: PropTypes.oneOf(ButtonSizes),
+    htmlType: PropTypes.oneOf(ButtonHTMLTypes),
+    onClick: PropTypes.func,
+    loading: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
+    className: PropTypes.string,
+    icon: PropTypes.string,
+    block: PropTypes.bool,
+>>>>>>> 92cd7f646061770f1aafc0aab4cac2e0d87dfb20
   };
 
   const fixTwoCNChar = () => {
